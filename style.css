@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	background: black;
+	color: yellow;
+
+}
+.main-content{
+	width: 90%;
+	margin: auto;
+	padding-top: 2rem;
+}
+.accordion{
+	background: yellow;
+	color: black;
+	
+}
+.accordion .block{
+	background: red;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.accordion .block .title{
+	background: green;
+	padding: 1rem;
+	overflow: hidden;
+}
+.accordion .block .content{
+	background: green;
+	/*padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;*/
+	height: 0;
+	overflow: hidden;
+	transition: all .5s;
+}
+
+.accordion .block.active .content{
+	/*padding-top: 1rem;
+	padding-bottom: 1rem;*/
+}
+
